@@ -7,11 +7,11 @@
 
 #Write your code below this line 👇
 
-totalBill = input("what was the total bill? $")
-tipPercentage = input("what percentage tip would you like to give? 10, 12. or 15? ")
-numberPerson = input("How many people to split the bill? ")
+totalBill = float(input("what was the total bill? $"))
+tipPercentage = int(input("what percentage tip would you like to give? 10, 12. or 15? "))
+numberPerson = int(input("How many people to split the bill? "))
 
 
-tipCalculated = round((float(totalBill)/int(numberPerson))+((float(tipPercentage) * float(totalBill))/100)/int(numberPerson),2)
+tipCalculated = round((totalBill/numberPerson)+((tipPercentage * totalBill) / 100) / numberPerson,2)
 print(f"Each person should pay: ${tipCalculated}")
 
