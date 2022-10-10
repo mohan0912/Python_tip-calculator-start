@@ -12,6 +12,6 @@ tipPercentage = int(input("what percentage tip would you like to give? 10, 12. o
 numberPerson = int(input("How many people to split the bill? "))
 
 
-tipCalculated = round((totalBill/numberPerson)+((tipPercentage * totalBill) / 100) / numberPerson,2)
+tipCalculated = round((totalBill/numberPerson)+(((tipPercentage * totalBill) / 100) / numberPerson),2)
 print(f"Each person should pay: ${tipCalculated}")
 
